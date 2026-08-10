@@ -103,3 +103,11 @@ apt get curl
 ```
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-08-01" src="https://github.com/user-attachments/assets/cf69e651-71e6-4668-8b14-c0e051e3b596" />
+
+### Step 15.
+
+Time to install Pi-hole from the official Github account by copy and pasting the command below and hitting the enter key.
+```
+curl -sSL https://install.pi-hole.net | bash
+```
+<img width="1917" height="815" alt="Screenshot From 2026-08-10 14-08-48" src="https://github.com/user-attachments/assets/ad9575b4-3fb7-4305-a7b0-b01ff66b257f" />
