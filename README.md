@@ -74,3 +74,13 @@ Now review the settings and click Finish.
 Next select the newly created container, and then click "Start" in the top right.
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-00-03" src="https://github.com/user-attachments/assets/aefc2d98-de4f-4326-b9da-72d129171af3" />
+
+### Step 13.
+
+Click on "Console" and enter the default login which is "root" and hit the enter key.
+
+<img width="1917" height="815" alt="Screenshot From 2026-08-10 14-00-58" src="https://github.com/user-attachments/assets/a349e7bb-441c-4ccb-bc30-2fb585fd302e" />
+Next enter the password you made during setup and hit the enter key.
+
+<img width="1917" height="815" alt="Screenshot From 2026-08-10 14-01-08" src="https://github.com/user-attachments/assets/92b666a9-b27f-44df-a7ab-8d2fba29411c" />
+
