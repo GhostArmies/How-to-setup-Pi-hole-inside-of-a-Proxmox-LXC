@@ -111,3 +111,25 @@ Time to install Pi-hole from the official Github account by copy and pasting the
 curl -sSL https://install.pi-hole.net | bash
 ```
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-08-48" src="https://github.com/user-attachments/assets/ad9575b4-3fb7-4305-a7b0-b01ff66b257f" />
+You should see this screen.
+
+<img width="1917" height="815" alt="Screenshot From 2026-08-10 14-08-57" src="https://github.com/user-attachments/assets/4059e030-cc1a-4d83-9f3b-a73c58457037" />
+
+## Configuring Pi-hole
+### Step 16.
+
+Hit the enter key.
+
+<img width="1917" height="815" alt="Screenshot From 2026-08-10 14-10-08" src="https://github.com/user-attachments/assets/40b357eb-33ed-4c90-a217-24922dc31a25" />
+
+Again you hit the enter key.
+
+<img width="1917" height="815" alt="Screenshot From 2026-08-10 14-10-24" src="https://github.com/user-attachments/assets/050efef8-d9d8-4b4e-9266-1093503f0f90" />
+
+This screen is just to remind you that having a static IP address is important by either setting one manually or setting a DHCP reservation. Select "Continue" and hit the enter key.
+
+<img width="1917" height="815" alt="Screenshot From 2026-08-10 14-10-46" src="https://github.com/user-attachments/assets/5ef1dc47-d5fc-4604-9a0c-e1a1f9914d01" />
+
+Next select your preferred DNS provider. Google DNS is the default and the used in this guide, but select the one you want and select "OK" and hit the enter key.
+
+<img width="1917" height="815" alt="Screenshot From 2026-08-10 14-10-52" src="https://github.com/user-attachments/assets/4bf76f92-b066-4b5e-9a60-5ca86b2c3eae" />
