@@ -1,7 +1,7 @@
 # How-to-setup-Pi-hole-inside-of-a-Proxmox-LXC
 
 Before getting started you will need to have Proxmox installed. If you don't already have it setup, I recommend this guide to get started https://www.youtube.com/watch?v=lFzWDJcRsqo&t
-
+## Getting Setup
 ### Step 1.
 
 Inside of the Proxmox Web UI select "local (pve)" --> "CT Templates" --> "Templates"
@@ -56,3 +56,19 @@ Now this is where you would enter your static IP address. But for this guide sel
 
 <img width="1233" height="817" alt="Screenshot From 2026-08-10 13-58-56" src="https://github.com/user-attachments/assets/69f34df7-a73e-41cb-8243-89eeb8e0dc64" />
 
+### Step 10.
+
+Leave the DNS settings at default and click next.
+
+<img width="1233" height="817" alt="Screenshot From 2026-08-10 13-59-04" src="https://github.com/user-attachments/assets/cdd3e4fc-87f6-4190-ad34-9cafb7c9d95b" />
+
+### Step 11.
+
+Now review the settings and click Finish.
+
+<img width="1233" height="817" alt="Screenshot From 2026-08-10 13-59-13" src="https://github.com/user-attachments/assets/7ff79ed1-f832-4f1e-998d-caa3cc7a45cf" />
+
+## Installing Pi-hole
+### Step 12.
+
+Next select the 
