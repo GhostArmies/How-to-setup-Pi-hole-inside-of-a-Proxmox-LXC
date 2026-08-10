@@ -50,3 +50,9 @@ The default 512MB of RAM is enough. Click Next.
 
 <img width="1233" height="817" alt="Screenshot From 2026-08-10 13-58-38" src="https://github.com/user-attachments/assets/25d024ba-7600-4d25-a125-dedecec67c85" />
 
+### Step 9.
+
+Now this is where you would enter your static IP address. But for this guide select DHCP to get an IP address from your router, then click Next.
+
+<img width="1233" height="817" alt="Screenshot From 2026-08-10 13-58-56" src="https://github.com/user-attachments/assets/69f34df7-a73e-41cb-8243-89eeb8e0dc64" />
+
