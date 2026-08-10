@@ -83,4 +83,6 @@ Click on "Console" and enter the default login which is "root" and hit the enter
 Next enter the password you made during setup and hit the enter key.
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-01-08" src="https://github.com/user-attachments/assets/92b666a9-b27f-44df-a7ab-8d2fba29411c" />
+You should now be signed in and see this screen.
 
+<img width="1917" height="815" alt="Screenshot From 2026-08-10 14-01-14" src="https://github.com/user-attachments/assets/ffe42b06-a62b-4940-95f5-0908b924cb0b" />
