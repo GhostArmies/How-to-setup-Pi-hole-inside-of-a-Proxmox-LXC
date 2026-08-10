@@ -32,3 +32,9 @@ Now select "ubuntu-26.04-standard" from the "Template" drop down box and click N
 
 <img width="1233" height="817" alt="Screenshot From 2026-08-10 13-58-09" src="https://github.com/user-attachments/assets/d38c1820-0d70-4e0a-84e0-622b78cceef0" />
 
+### Step6.
+
+The default 8GB of storage is enough for Pi-hole. Click Next.
+
+<img width="1233" height="817" alt="Screenshot From 2026-08-10 13-58-26" src="https://github.com/user-attachments/assets/872b4c64-b0a4-47f8-ae94-0706445b8777" />
+
