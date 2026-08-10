@@ -71,4 +71,6 @@ Now review the settings and click Finish.
 ## Installing Pi-hole
 ### Step 12.
 
-Next select the 
+Next select the newly created container, and then click "Start" in the top right.
+
+<img width="1917" height="815" alt="Screenshot From 2026-08-10 14-00-03" src="https://github.com/user-attachments/assets/aefc2d98-de4f-4326-b9da-72d129171af3" />
