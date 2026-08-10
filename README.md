@@ -86,3 +86,20 @@ Next enter the password you made during setup and hit the enter key.
 You should now be signed in and see this screen.
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-01-14" src="https://github.com/user-attachments/assets/ffe42b06-a62b-4940-95f5-0908b924cb0b" />
+
+### Step 13.
+
+Now copy and paste this command and hit the enter key to update Ubuntu before installing Pi-hole.
+```
+sudo apt update && sudo apt upgrade
+```
+<img width="1917" height="815" alt="Screenshot From 2026-08-10 14-04-37" src="https://github.com/user-attachments/assets/220cfb81-8c6b-42da-93e0-8d4cab3a56c8" />
+
+### Step 14.
+
+Now you need to install Curl. Copy and paste the command below and hit the enter key.
+```
+apt get curl
+```
+
+<img width="1917" height="815" alt="Screenshot From 2026-08-10 14-08-01" src="https://github.com/user-attachments/assets/cf69e651-71e6-4668-8b14-c0e051e3b596" />
