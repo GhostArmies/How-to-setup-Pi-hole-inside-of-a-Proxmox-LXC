@@ -38,3 +38,15 @@ The default 8GB of storage is enough for Pi-hole. Click Next.
 
 <img width="1233" height="817" alt="Screenshot From 2026-08-10 13-58-26" src="https://github.com/user-attachments/assets/872b4c64-b0a4-47f8-ae94-0706445b8777" />
 
+### Step 7.
+
+The default 1 CPU core is enough. Click Next.
+
+<img width="1233" height="817" alt="Screenshot From 2026-08-10 13-58-32" src="https://github.com/user-attachments/assets/ffe133cf-bfd0-437f-913f-6da06a573345" />
+
+### Step 8.
+
+The default 512MB of RAM is enough. Click Next.
+
+<img width="1233" height="817" alt="Screenshot From 2026-08-10 13-58-38" src="https://github.com/user-attachments/assets/25d024ba-7600-4d25-a125-dedecec67c85" />
+
