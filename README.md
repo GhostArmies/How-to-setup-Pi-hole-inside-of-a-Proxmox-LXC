@@ -164,11 +164,11 @@ click on "HTTPS".
 
 <img width="830" height="856" alt="Screenshot From 2026-08-10 14-20-08" src="https://github.com/user-attachments/assets/2295d9c0-f52b-4441-bd5f-79f80a3eafe8" />
 
-You will now get a warning from your browser about the site you are about to visit, but you are the one who set the site up so it's safe to continue and click on advanced. 
+You will now get a warning from your browser about the site you are about to visit, but you are the one who set the site up so it's safe to continue and click on advanced.(Note: These warnings are due to Pi-hole using a self signed certificate that your web browser can't verify. This is safe to ignore here but is not something you should do outside of your home network.)
 
 <img width="1095" height="595" alt="Screenshot From 2026-08-10 14-20-28" src="https://github.com/user-attachments/assets/928de29c-9c06-404d-a961-fd185999295f" />
 
-It's safe to ignore this warning also and click on the IP address at the bottom to continue.
+It's safe to ignore this warning also and click on the IP address at the bottom to continue. 
 
 <img width="1152" height="967" alt="Screenshot From 2026-08-10 14-20-44" src="https://github.com/user-attachments/assets/91df5f69-a825-4e7f-9fa8-29067dbd3684" />
 
@@ -235,7 +235,7 @@ pihole -up
 
 ### Step 24.
 
-There's one last warning to clean up. Due to how LXC handles resources Pi-hole will fail to host its own time, but it can pull the time from Proxmox.
+There's one last warning to clean up. Due to how LXC handles resources, pihole-FTL tries to sync the clock via NTP, and an unprivileged container isn't allowed to set the system clock. It inherits the host's.
 
 <img width="1573" height="1003" alt="Screenshot From 2026-08-10 14-23-45" src="https://github.com/user-attachments/assets/a791cf46-06e8-482d-b95a-4090cac9e81e" />
 
@@ -246,7 +246,13 @@ sudo pihole-FTL --config ntp.sync.active false
 
 <img width="1401" height="792" alt="Screenshot From 2026-08-10 14-25-38" src="https://github.com/user-attachments/assets/568e986a-c4bb-4d13-bb16-fabc04272a69" />
 
-Now you should be all set, and from here you can set your routers DNS to the Pi-hole's IP address or set it for individual devices.
+
+Now you should be all set, and from here you can set your routers DNS provider to the Pi-hole's IP address or set it for individual devices. Here's an example of what the Unifi Cloud Gateway setting looks like. (Note: some ISP-supplied routers won't let you change it at all. So you will need to set DNS per-device. Or setup an alternative DHCP server which is outside of the scope for this guide.)
+
+<img width="466" height="326" alt="Screenshot From 2026-08-11 13-30-03" src="https://github.com/user-attachments/assets/14bdf80d-06e4-44f2-bf6a-c622dca1d8ef" />
+
+Devices keep their old DNS until their lease renews. Reboot them or wait.
+
 
 From here you can adjust if you need to give Pi-hole more resources like CPU cores or RAM. You can also look into adding more block lists, look into things like Unbound DNS for self hosted DNS resolution, adding more Pi-hole instances for redundancy, or Syncing them using things like Nebula Sync or Gravity-Sync.
 
