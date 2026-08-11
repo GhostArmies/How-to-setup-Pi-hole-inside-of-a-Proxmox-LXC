@@ -147,7 +147,7 @@ Same as above. Select "Show everything" then "Continue" and hit enter.
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-11-49" src="https://github.com/user-attachments/assets/9195de71-9214-42d1-b6fd-4fe278109e84" />
 
-Now the installation is complete and it will show you a screen with the IP address of the Admin webpage and Admin password. (Note: your IP address and password will be different than what's shown)
+Now the installation is complete and it will show you a screen with the IP address of the Admin webpage and Admin password, document these. (Note: your IP address and password will be different than what's shown)
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-13-07" src="https://github.com/user-attachments/assets/b444bdaf-a26e-4fa0-b7b0-598e78515f06" />
 
