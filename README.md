@@ -91,7 +91,7 @@ You should now be signed in and see this screen.
 
 Now copy and paste this command and hit the enter key to update Ubuntu before installing Pi-hole.
 ```
-sudo apt update && sudo apt upgrade
+apt update && apt upgrade
 ```
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-04-37" src="https://github.com/user-attachments/assets/220cfb81-8c6b-42da-93e0-8d4cab3a56c8" />
 
