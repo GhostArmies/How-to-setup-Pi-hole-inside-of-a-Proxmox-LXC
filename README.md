@@ -22,7 +22,7 @@ In the Proxmox web UI click on "Create CT" in the top right corner.
 
 ### Step 4.
 
-Select a "CT ID:" like 100, 101 or 102. If this is your first VM 100 is fine. Next click "Hostname:" and give it a name like "Pi-hole-ubuntu" after that create a password, then click Next. (A quick note on containers: they share the kernel with the host system, which is what makes them so lightweight. In a privileged container, root inside the container is also root on Proxmox. Leave the Unprivileged box checked, it's the default and all Pi-hole needs.)
+Select a "CT ID:" like 100, 101 or 102. If this is your first VM or container 100 is fine. Next click "Hostname:" and give it a name like "Pi-hole-ubuntu" after that create a password, then click Next. (A quick note on containers: they share the kernel with the host system, which is what makes them so lightweight. In a privileged container, root inside the container is also root on Proxmox. Leave the Unprivileged box checked, it's the default and all Pi-hole needs.)
 
 <img width="1233" height="817" alt="Screenshot From 2026-08-10 13-56-57" src="https://github.com/user-attachments/assets/ab2ac987-0eea-4660-95bb-985e995816b7" />
 
@@ -164,7 +164,7 @@ click on "HTTPS".
 
 <img width="830" height="856" alt="Screenshot From 2026-08-10 14-20-08" src="https://github.com/user-attachments/assets/2295d9c0-f52b-4441-bd5f-79f80a3eafe8" />
 
-You will now get a warning from your browser about the site you are about to visit, but you are the one who set the site up so it's safe to continue and click on advanced.(Note: These warnings are due to Pi-hole using a self signed certificate that your web browser can't verify. This is safe to ignore here but is not something you should do outside of your home network.)
+You will now get a warning from your browser about the site you are about to visit, but you are the one who set the site up so it's safe to continue and click on advanced. (Note: These warnings are due to Pi-hole using a self signed certificate that your web browser can't verify. This is safe to ignore here but is not something you should do outside of your home network.)
 
 <img width="1095" height="595" alt="Screenshot From 2026-08-10 14-20-28" src="https://github.com/user-attachments/assets/928de29c-9c06-404d-a961-fd185999295f" />
 
@@ -187,17 +187,17 @@ You will now see the Pi-hole dashboard.
 <img width="1573" height="1003" alt="Screenshot From 2026-08-10 14-23-32" src="https://github.com/user-attachments/assets/aec2e14a-73e8-4f0f-8ba4-c73f65202010" />
 
 ### Step 21.
-Time to test that it works. From another machine enter the command below with your Pi-hole IP address and it should come back 0.0.0.0, and the dashboard query counter should tick up. (Note: The 192.168.1.16 IP address is for example purposes and you need to enter your Pi-hole IP address)
+Time to test that it works. From another machine enter the command below with your Pi-hole IP address and it should come back 0.0.0.0, and the dashboard query counter should tick up. (Note: The 192.168.1.16 IP address is for example purposes and you need to enter your Pi-hole IP address) (Also make sure to replace the "< >" with your Pi-hole IP)
 ```
-nslookup doubleclick.net <pihole-ip>
+nslookup doubleclick.net <pihole-ip> 
 ```
 <img width="922" height="565" alt="Screenshot From 2026-08-11 12-54-49" src="https://github.com/user-attachments/assets/1aa92d62-e483-47b0-8aed-35221d4abbe8" />
 
-This what the command should output.
+This is what the command should output.
 
 <img width="922" height="565" alt="Screenshot From 2026-08-11 12-54-57" src="https://github.com/user-attachments/assets/a9292204-c68d-49ce-b20e-9fad966818bc" />
 
-And if your dashboard updates showing it has blocked AD traffic, it's working.
+And if your dashboard updates showing it has blocked ad traffic, it's working.
 
 <img width="1555" height="630" alt="Screenshot From 2026-08-11 12-55-17" src="https://github.com/user-attachments/assets/1cb89efb-0da4-44e3-90ee-280e62d92793" />
 
@@ -247,7 +247,7 @@ pihole-FTL --config ntp.sync.active false
 <img width="1401" height="792" alt="Screenshot From 2026-08-10 14-25-38" src="https://github.com/user-attachments/assets/568e986a-c4bb-4d13-bb16-fabc04272a69" />
 
 
-Now you should be all set, and from here you can set your routers LAN DNS provider to the Pi-hole's IP address or set it for individual devices. Here's an example of what the Unifi Cloud Gateway setting looks like. (Note: some ISP-supplied routers won't let you change it at all. So you will need to set DNS per-device. Or setup an alternative DHCP server which is outside of the scope for this guide.)
+Now you should be all set, and from here you can set your router's LAN DNS provider to the Pi-hole's IP address or set it for individual devices. Here's an example of what the Unifi Cloud Gateway setting looks like. (Note: some ISP-supplied routers won't let you change it at all. So you will need to set DNS per-device. Or Pi-hole has an option to operate as DHCP server which is outside of the scope for this guide.)
 
 <img width="466" height="326" alt="Screenshot From 2026-08-11 13-30-03" src="https://github.com/user-attachments/assets/14bdf80d-06e4-44f2-bf6a-c622dca1d8ef" />
 
