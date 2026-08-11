@@ -186,6 +186,22 @@ You will now see the Pi-hole dashboard.
 
 <img width="1573" height="1003" alt="Screenshot From 2026-08-10 14-23-32" src="https://github.com/user-attachments/assets/aec2e14a-73e8-4f0f-8ba4-c73f65202010" />
 
+### Step21.
+Time to test that it works. From another machine enter the command below with your Pi-hole IP address and it should come back 0.0.0.0, and the dashboard query counter should tick up. (Note: The 192.168.1.16 IP address is for example purposes and you need to enter your Pi-hole IP address)
+```
+nslookup doubleclick.net <pihole-ip>
+```
+<img width="922" height="565" alt="Screenshot From 2026-08-11 12-54-49" src="https://github.com/user-attachments/assets/1aa92d62-e483-47b0-8aed-35221d4abbe8" />
+
+This what the command should output.
+
+<img width="922" height="565" alt="Screenshot From 2026-08-11 12-54-57" src="https://github.com/user-attachments/assets/a9292204-c68d-49ce-b20e-9fad966818bc" />
+
+And if your dashboard updates showing it has blocked AD traffic, it's working.
+
+<img width="1555" height="630" alt="Screenshot From 2026-08-11 12-55-17" src="https://github.com/user-attachments/assets/1cb89efb-0da4-44e3-90ee-280e62d92793" />
+
+
 ## Final Steps
 ### Step 21.
 
