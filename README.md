@@ -1,7 +1,7 @@
 # How to set up Pi-hole inside of a Proxmox 9.2.10 LXC
 ## A step-by-step, screenshot-by-screenshot guide to running Pi-hole in an unprivileged LXC container on Proxmox 9.2.10.
 
-Before getting started you will need to have Proxmox installed. If you don't already have it setup, I recommend this guide to get started https://www.youtube.com/watch?v=lFzWDJcRsqo&t 
+Before getting started you will need to have Proxmox installed. If you don't already have it setup, I recommend this guide to get started https://www.youtube.com/watch?v=lFzWDJcRsqo&t or from the official documentation https://pve.proxmox.com/pve-docs/chapter-pve-installation.html
 
 ## Getting Setup
 ### Step 1.
@@ -248,6 +248,7 @@ pihole-FTL --config ntp.sync.active false
 
 <img width="1401" height="792" alt="Screenshot From 2026-08-10 14-25-38" src="https://github.com/user-attachments/assets/568e986a-c4bb-4d13-bb16-fabc04272a69" />
 
+### Step 26.
 
 Now you should be all set, and from here you can set your router's LAN DNS provider to the Pi-hole's IP address or set it for individual devices. Here's an example of what the Unifi Cloud Gateway setting looks like. (Note: some ISP-supplied routers won't let you change it at all. So you will need to set DNS per-device. Or Pi-hole has an option to operate as DHCP server which is outside of the scope for this guide.)
 
@@ -255,7 +256,18 @@ Now you should be all set, and from here you can set your router's LAN DNS provi
 
 Devices keep their old DNS until their lease renews. Reboot them or wait.
 
+### Step 27.
 
+(Quick warning) Don't set the Proxmox host's DNS to the Pi-hole container, leave it on your router or an upstream resolver like Google DNS 8.8.8.8 or Cloudflare DNS 1.1.1.1 otherwise if the host reboots, it can't resolve anything until a container it hasn't started yet comes up.
+
+Inside of the Proxmox web UI go to "PVE" --> "DNS"--> "DNS Server 1"
+<img width="1893" height="586" alt="Screenshot From 2026-08-11 14-26-03" src="https://github.com/user-attachments/assets/60cf6325-a3ed-47c1-a760-b9c660e3e1b0" />
+
+Click on "DNS Server 1" and enter the DNS of your choice and click OK.
+<img width="1893" height="586" alt="Screenshot From 2026-08-11 14-27-49" src="https://github.com/user-attachments/assets/ddbfae7f-b8c6-4ac1-9046-54ef9f6c8615" />
+
+
+## Wrap Up
 From here you can adjust if you need to give Pi-hole more resources like CPU cores or RAM. You can also look into adding more block lists, look into things like Unbound DNS for self hosted DNS resolution, adding more Pi-hole instances for redundancy, or Syncing them using things like Nebula Sync or Gravity-Sync.
 
 Thanks for reading.
