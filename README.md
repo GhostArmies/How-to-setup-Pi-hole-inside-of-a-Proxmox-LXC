@@ -147,7 +147,7 @@ Same as above. Select "Show everything" then "Continue" and hit enter.
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-11-49" src="https://github.com/user-attachments/assets/9195de71-9214-42d1-b6fd-4fe278109e84" />
 
-Now the installation is complete and it will show you a screen with the IP address of the Admin webpage and and Admin password. Write this down since you're going to need it in the future.(Note: your IP address and password will be different than what's shown)
+Now the installation is complete and it will show you a screen with the IP address of the Admin webpage and Admin password. Write this down since you're going to need it in the future.(Note: your IP address and password will be different than what's shown)
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-13-07" src="https://github.com/user-attachments/assets/b444bdaf-a26e-4fa0-b7b0-598e78515f06" />
 
@@ -230,9 +230,9 @@ sudo pihole-FTL --config ntp.sync.active false
 
 <img width="1401" height="792" alt="Screenshot From 2026-08-10 14-25-38" src="https://github.com/user-attachments/assets/568e986a-c4bb-4d13-bb16-fabc04272a69" />
 
-Now you should be all set, and from here you can set your routers to the Pi-holes IP address or set it for individual devices.
+Now you should be all set, and from here you can set your routers DNS to the Pi-hole's IP address or set it for individual devices.
 
-From here you can adjust if you need to give Pi-hole more resources like CPU cores or RAM. You can also look into adding more block lists, look into things like Unbound DNS for self hosted DNS resolution, adding more Pi-hole instances for redundancy. Or Syncing them using things like  Nebula Sync or Gravity-Sync.
+From here you can adjust if you need to give Pi-hole more resources like CPU cores or RAM. You can also look into adding more block lists, look into things like Unbound DNS for self hosted DNS resolution, adding more Pi-hole instances for redundancy, or Syncing them using things like Nebula Sync or Gravity-Sync.
 
 Thanks for reading.
 
