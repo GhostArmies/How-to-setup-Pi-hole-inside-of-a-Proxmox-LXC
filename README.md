@@ -153,8 +153,10 @@ Now the installation is complete and it will show you a screen with the IP addre
 
 ### Step 17.
 
-To access the web interface you will need to open your favorite web browser and type in the Pi-hole IP address in the URL bar at the top.
+To access the web interface you will need to open your favorite web browser and type in the Pi-hole IP address in the URL bar at the top. (Note: Clicking on any option that says "search the web" will search the web for your IP address and not take you to your local Pi-hole IP address)
 
 <img width="1078" height="123" alt="Screenshot From 2026-08-10 14-17-11" src="https://github.com/user-attachments/assets/150b56dc-031f-4ab0-b436-6bcc7e469eb1" />
+
+### Step 18.
 
 
