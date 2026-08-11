@@ -1,4 +1,4 @@
-# How to setup Pi-hole inside of a Proxmox LXC
+# How to set up Pi-hole inside of a Proxmox 9.2.10 LXC
 
 Before getting started you will need to have Proxmox installed. If you don't already have it setup, I recommend this guide to get started https://www.youtube.com/watch?v=lFzWDJcRsqo&t
 ## Getting Setup
@@ -32,7 +32,7 @@ Now select "ubuntu-26.04-standard" from the "Template" drop down box, and click 
 
 <img width="1233" height="817" alt="Screenshot From 2026-08-10 13-58-09" src="https://github.com/user-attachments/assets/d38c1820-0d70-4e0a-84e0-622b78cceef0" />
 
-### Step6.
+### Step 6.
 
 The default 8GB of storage is enough for Pi-hole. Click Next.
 
@@ -178,7 +178,7 @@ Now you should be back at the Pi-hole login but this time you're connected to it
 
 ## Logging In
 ### Step 20.
-Now enter the password Pi-hole generated for you at the end of instillation and click "Login"
+Now enter the password Pi-hole generated for you at the end of installation and click "Login"
 
 <img width="1152" height="967" alt="Screenshot From 2026-08-10 14-21-54" src="https://github.com/user-attachments/assets/436b8c4a-0e3a-4414-b1a0-2817e9420811" />
 
@@ -210,7 +210,16 @@ Now it will ask you to enter your new password and to retype it.
 
 ### Step 23.
 
-There's one last warning to clean up. Due to how LXC handles resources Pi-hole will fail to host it's own time, but it can pull the time from Proxmox.
+Enter this command into the the console to update Pi-hole.
+```
+pihole -up
+```
+
+<img width="1157" height="331" alt="Screenshot From 2026-08-10 20-53-31" src="https://github.com/user-attachments/assets/e3e6e2c6-24a0-4de7-b65d-251bf100dae9" />
+
+### Step 24.
+
+There's one last warning to clean up. Due to how LXC handles resources Pi-hole will fail to host its own time, but it can pull the time from Proxmox.
 
 <img width="1573" height="1003" alt="Screenshot From 2026-08-10 14-23-45" src="https://github.com/user-attachments/assets/a791cf46-06e8-482d-b95a-4090cac9e81e" />
 
