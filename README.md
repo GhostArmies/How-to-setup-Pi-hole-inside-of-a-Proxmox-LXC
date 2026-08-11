@@ -133,3 +133,28 @@ This screen is just to remind you that having a static IP address is important b
 Next select your preferred DNS provider. Google DNS is the default and the used in this guide, but select the one you want and select "OK" and hit the enter key.
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-10-52" src="https://github.com/user-attachments/assets/4bf76f92-b066-4b5e-9a60-5ca86b2c3eae" />
+
+StevenBlack's block list is the Pi-hole default and the recommended one to start out with.
+Select "Yes" and hit the enter key.
+
+<img width="1917" height="815" alt="Screenshot From 2026-08-10 14-11-06" src="https://github.com/user-attachments/assets/e9b3759a-10a2-48a1-b14d-014928997740" />
+
+Most people will want to enable query logging. Select "Yes" and hit enter.
+
+<img width="1917" height="815" alt="Screenshot From 2026-08-10 14-11-42" src="https://github.com/user-attachments/assets/491a628b-cfe5-4a9c-a825-f7104fcfee48" />
+
+Same as above. Select "Show everything" then "Continue" and hit enter.
+
+<img width="1917" height="815" alt="Screenshot From 2026-08-10 14-11-49" src="https://github.com/user-attachments/assets/9195de71-9214-42d1-b6fd-4fe278109e84" />
+
+Now the installation is complete and it will show you a screen with the IP address on the Admin webpage and and Admin password. (Note: your IP address and password will be different that what's shown)
+
+<img width="1917" height="815" alt="Screenshot From 2026-08-10 14-13-07" src="https://github.com/user-attachments/assets/b444bdaf-a26e-4fa0-b7b0-598e78515f06" />
+
+### Step 17.
+
+To access the web interface you will need to open your favorite web browser and type in the Pi-hole IP address in the URL bar at the top.
+
+<img width="1078" height="123" alt="Screenshot From 2026-08-10 14-17-11" src="https://github.com/user-attachments/assets/150b56dc-031f-4ab0-b436-6bcc7e469eb1" />
+
+
