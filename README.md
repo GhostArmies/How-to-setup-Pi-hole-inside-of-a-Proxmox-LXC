@@ -22,7 +22,7 @@ In the Proxmox web UI click on "Create CT" in the top right corner.
 
 ### Step 4.
 
-Select a "CT ID:" like 100, 101 or 102. If this is your first VM 100 is fine. Next click "Hostname:" and give it a name like "Pie-hole-ubuntu" after that create a password, then click Next. (A quick note on containers: they share the kernel with the host system, which is what makes them so lightweight. In a privileged container, root inside the container is also root on Proxmox. Leave the Unprivileged box checked, it's the default and all Pi-hole needs.)
+Select a "CT ID:" like 100, 101 or 102. If this is your first VM 100 is fine. Next click "Hostname:" and give it a name like "Pi-hole-ubuntu" after that create a password, then click Next. (A quick note on containers: they share the kernel with the host system, which is what makes them so lightweight. In a privileged container, root inside the container is also root on Proxmox. Leave the Unprivileged box checked, it's the default and all Pi-hole needs.)
 
 <img width="1233" height="817" alt="Screenshot From 2026-08-10 13-56-57" src="https://github.com/user-attachments/assets/ab2ac987-0eea-4660-95bb-985e995816b7" />
 
