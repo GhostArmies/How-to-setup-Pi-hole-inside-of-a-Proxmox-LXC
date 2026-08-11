@@ -1,4 +1,4 @@
-# How-to-setup-Pi-hole-inside-of-a-Proxmox-LXC
+# How to setup Pi-hole inside of a Proxmox LXC
 
 Before getting started you will need to have Proxmox installed. If you don't already have it setup, I recommend this guide to get started https://www.youtube.com/watch?v=lFzWDJcRsqo&t
 ## Getting Setup
