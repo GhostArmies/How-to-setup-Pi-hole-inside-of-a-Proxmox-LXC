@@ -99,7 +99,7 @@ sudo apt update && sudo apt upgrade
 
 Now you need to install Curl. Copy and paste the command below and hit the enter key.
 ```
-apt get curl
+apt install curl
 ```
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-08-01" src="https://github.com/user-attachments/assets/cf69e651-71e6-4668-8b14-c0e051e3b596" />
