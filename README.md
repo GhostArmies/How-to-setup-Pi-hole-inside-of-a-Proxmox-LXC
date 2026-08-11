@@ -176,3 +176,14 @@ Now you should be back at the Pi-hole login but this you're connected to vie HTT
 
 <img width="1152" height="967" alt="Screenshot From 2026-08-10 14-21-02" src="https://github.com/user-attachments/assets/dc7b75b9-cf9e-4fc5-b3a2-91a590850e7c" />
 
+## Logging In
+### Step 19.
+Now enter the password Pi-hole generated for you at the end of instillation and click "Login"
+
+<img width="1152" height="967" alt="Screenshot From 2026-08-10 14-21-54" src="https://github.com/user-attachments/assets/436b8c4a-0e3a-4414-b1a0-2817e9420811" />
+
+You will now see the Pi-hole dashboard.
+
+<img width="1573" height="1003" alt="Screenshot From 2026-08-10 14-23-32" src="https://github.com/user-attachments/assets/aec2e14a-73e8-4f0f-8ba4-c73f65202010" />
+
+
