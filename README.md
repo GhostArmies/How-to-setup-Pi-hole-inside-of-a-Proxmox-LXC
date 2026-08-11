@@ -89,7 +89,7 @@ You should now be signed in and see this screen.
 
 ### Step 14.
 
-Now copy and paste this command and hit the enter key to update Ubuntu before installing Pi-hole.
+Now copy and paste this command and hit the enter key to update Ubuntu before installing Pi-hole. (Note: ``-y`` automatically answers yes to the confirmation prompts, so you don't have to sit there hitting Y.)
 ```
 apt update && apt upgrade -y
 ```
