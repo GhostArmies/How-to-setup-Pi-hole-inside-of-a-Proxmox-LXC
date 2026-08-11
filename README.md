@@ -106,7 +106,7 @@ apt install curl
 
 ### Step 16.
 
-Time to install Pi-hole from the official Github account by copy and pasting the command below and hitting the enter key.
+Time to install Pi-hole from the official GitHub account by copy and pasting the command below and hitting the enter key. Or if you would prefer here's a link to Pi-hole GitHub where you can verify the command: https://github.com/pi-hole/pi-hole/#one-step-automated-install
 ```
 curl -sSL https://install.pi-hole.net | bash
 ```
