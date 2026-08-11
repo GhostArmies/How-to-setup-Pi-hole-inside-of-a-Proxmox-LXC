@@ -16,19 +16,19 @@ From the templates find "ubuntu-26.04-standard" click on it and click Download i
 
 ### Step 3.
 
-In the Proxmox web UI click on "Create CT" in the to right corner.
+In the Proxmox web UI click on "Create CT" in the top right corner.
 
 <img width="1910" height="841" alt="Screenshot From 2026-08-10 13-55-50" src="https://github.com/user-attachments/assets/551f49a2-d9c0-42d3-9933-a6000166221e" />
 
 ### Step 4.
 
-Select a "CT ID:" like 100, 101 or 102. If this is your first VM 100 is fine. Next click "Hostname:" and give it a name like "Pie-hole-ubuntu" after that create a password then click Next.
+Select a "CT ID:" like 100, 101 or 102. If this is your first VM 100 is fine. Next click "Hostname:" and give it a name like "Pie-hole-ubuntu" after that create a password, then click Next.
 
 <img width="1233" height="817" alt="Screenshot From 2026-08-10 13-56-57" src="https://github.com/user-attachments/assets/ab2ac987-0eea-4660-95bb-985e995816b7" />
 
 ### Step 5.
 
-Now select "ubuntu-26.04-standard" from the "Template" drop down box and click Next.
+Now select "ubuntu-26.04-standard" from the "Template" drop down box, and click Next.
 
 <img width="1233" height="817" alt="Screenshot From 2026-08-10 13-58-09" src="https://github.com/user-attachments/assets/d38c1820-0d70-4e0a-84e0-622b78cceef0" />
 
@@ -52,13 +52,13 @@ The default 512MB of RAM is enough. Click Next.
 
 ### Step 9.
 
-Now this is where you would enter your static IP address. But for this guide select DHCP to get an IP address from your router, then click Next.
+Now this is where you would enter your static IP address, but for this guide select DHCP to get an IP address from your router, then click Next.
 
 <img width="1233" height="817" alt="Screenshot From 2026-08-10 13-58-56" src="https://github.com/user-attachments/assets/69f34df7-a73e-41cb-8243-89eeb8e0dc64" />
 
 ### Step 10.
 
-Leave the DNS settings at default and click next.
+Leave the DNS settings at default, and click next.
 
 <img width="1233" height="817" alt="Screenshot From 2026-08-10 13-59-04" src="https://github.com/user-attachments/assets/cdd3e4fc-87f6-4190-ad34-9cafb7c9d95b" />
 
@@ -130,7 +130,7 @@ This screen is just to remind you that having a static IP address is important b
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-10-46" src="https://github.com/user-attachments/assets/5ef1dc47-d5fc-4604-9a0c-e1a1f9914d01" />
 
-Next select your preferred DNS provider. Google DNS is the default and the used in this guide, but select the one you want and select "OK" and hit the enter key.
+Next select your preferred DNS provider. Google DNS is the default and the one used in this guide, but select the one you want and select "OK" and hit the enter key.
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-10-52" src="https://github.com/user-attachments/assets/4bf76f92-b066-4b5e-9a60-5ca86b2c3eae" />
 
@@ -147,7 +147,7 @@ Same as above. Select "Show everything" then "Continue" and hit enter.
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-11-49" src="https://github.com/user-attachments/assets/9195de71-9214-42d1-b6fd-4fe278109e84" />
 
-Now the installation is complete and it will show you a screen with the IP address on the Admin webpage and and Admin password. (Note: your IP address and password will be different that what's shown)
+Now the installation is complete and it will show you a screen with the IP address of the Admin webpage and and Admin password. Write this down since you're going to need it in the future.(Note: your IP address and password will be different than what's shown)
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-13-07" src="https://github.com/user-attachments/assets/b444bdaf-a26e-4fa0-b7b0-598e78515f06" />
 
@@ -168,11 +168,11 @@ You will now get a warning from your browser about the site you are about to vis
 
 <img width="1095" height="595" alt="Screenshot From 2026-08-10 14-20-28" src="https://github.com/user-attachments/assets/928de29c-9c06-404d-a961-fd185999295f" />
 
-It's safe to ignore this warn also and click on the IP address at the bottom to continue.
+It's safe to ignore this warning also and click on the IP address at the bottom to continue.
 
 <img width="1152" height="967" alt="Screenshot From 2026-08-10 14-20-44" src="https://github.com/user-attachments/assets/91df5f69-a825-4e7f-9fa8-29067dbd3684" />
 
-Now you should be back at the Pi-hole login but this you're connected to vie HTTPS which is encrypted via TLS.
+Now you should be back at the Pi-hole login but this time you're connected to it through HTTPS which is encrypted via TLS.
 
 <img width="1152" height="967" alt="Screenshot From 2026-08-10 14-21-02" src="https://github.com/user-attachments/assets/dc7b75b9-cf9e-4fc5-b3a2-91a590850e7c" />
 
@@ -189,7 +189,7 @@ You will now see the Pi-hole dashboard.
 ## Final Steps
 ### Step 20.
 
-After everything is setup you should into you router and set DHCP reservation, if you are sure where to go Google "Router model how to set DHCP reservation" or you can ask you favorite AI model
+After everything is setup you should log into your router and set a DHCP reservation, if you are not sure how to, Google "Router model + how to set DHCP reservation" or you can ask your favorite AI model
 Here's an example of what mine looked like.
 
 <img width="480" height="968" alt="Screenshot From 2026-08-10 14-15-13" src="https://github.com/user-attachments/assets/06430bfc-7300-47fe-b150-aec32ffd3a4a" />
@@ -221,9 +221,9 @@ sudo pihole-FTL --config ntp.sync.active false
 
 <img width="1401" height="792" alt="Screenshot From 2026-08-10 14-25-38" src="https://github.com/user-attachments/assets/568e986a-c4bb-4d13-bb16-fabc04272a69" />
 
-Now you should be all set and from here you can set your routers to the Pi-holes IP address or set it for individual devices.
+Now you should be all set, and from here you can set your routers to the Pi-holes IP address or set it for individual devices.
 
-From here you can adjust if you need to give Pi-hole more resourses like CPU core or RAM. You can also look into adding more block lists, look into things like Unbound DNS for self hosted DNS resolution, adding more Pi-hole instances for redundancy. Or Syncing them using things like  Nebula Sync or Gravity-Sync.
+From here you can adjust if you need to give Pi-hole more resources like CPU cores or RAM. You can also look into adding more block lists, look into things like Unbound DNS for self hosted DNS resolution, adding more Pi-hole instances for redundancy. Or Syncing them using things like  Nebula Sync or Gravity-Sync.
 
 Thanks for reading.
 
