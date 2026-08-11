@@ -160,10 +160,19 @@ To access the web interface you will need to open your favorite web browser and 
 ### Step 18.
 
 Now you should be on the Pi-hole login page and where it says "Consider upgrading to HTTPS"
-click on "HTTPS".
+click on "HTTPS". 
 
 <img width="830" height="856" alt="Screenshot From 2026-08-10 14-20-08" src="https://github.com/user-attachments/assets/2295d9c0-f52b-4441-bd5f-79f80a3eafe8" />
 
+You will now get a warning from your browser about the site you are about to visit, but you are the one who set the site up so it's safe to continue and click on advanced. 
 
+<img width="1095" height="595" alt="Screenshot From 2026-08-10 14-20-28" src="https://github.com/user-attachments/assets/928de29c-9c06-404d-a961-fd185999295f" />
 
+It's safe to ignore this warn also and click on the IP address at the bottom to continue.
+
+<img width="1152" height="967" alt="Screenshot From 2026-08-10 14-20-44" src="https://github.com/user-attachments/assets/91df5f69-a825-4e7f-9fa8-29067dbd3684" />
+
+Now you should be back at the Pi-hole login but this you're connected to vie HTTPS which is encrypted via TLS.
+
+<img width="1152" height="967" alt="Screenshot From 2026-08-10 14-21-02" src="https://github.com/user-attachments/assets/dc7b75b9-cf9e-4fc5-b3a2-91a590850e7c" />
 
