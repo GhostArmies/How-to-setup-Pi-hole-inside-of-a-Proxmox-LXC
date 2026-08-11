@@ -87,7 +87,7 @@ You should now be signed in and see this screen.
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-01-14" src="https://github.com/user-attachments/assets/ffe42b06-a62b-4940-95f5-0908b924cb0b" />
 
-### Step 13.
+### Step 14.
 
 Now copy and paste this command and hit the enter key to update Ubuntu before installing Pi-hole.
 ```
@@ -95,7 +95,7 @@ sudo apt update && sudo apt upgrade
 ```
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-04-37" src="https://github.com/user-attachments/assets/220cfb81-8c6b-42da-93e0-8d4cab3a56c8" />
 
-### Step 14.
+### Step 15.
 
 Now you need to install Curl. Copy and paste the command below and hit the enter key.
 ```
@@ -104,7 +104,7 @@ apt install curl
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-08-01" src="https://github.com/user-attachments/assets/cf69e651-71e6-4668-8b14-c0e051e3b596" />
 
-### Step 15.
+### Step 16.
 
 Time to install Pi-hole from the official Github account by copy and pasting the command below and hitting the enter key.
 ```
@@ -116,7 +116,7 @@ You should see this screen.
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-08-57" src="https://github.com/user-attachments/assets/4059e030-cc1a-4d83-9f3b-a73c58457037" />
 
 ## Configuring Pi-hole
-### Step 16.
+### Step 17.
 
 Hit the enter key.
 
@@ -151,13 +151,13 @@ Now the installation is complete and it will show you a screen with the IP addre
 
 <img width="1917" height="815" alt="Screenshot From 2026-08-10 14-13-07" src="https://github.com/user-attachments/assets/b444bdaf-a26e-4fa0-b7b0-598e78515f06" />
 
-### Step 17.
+### Step 18.
 
 To access the web interface you will need to open your favorite web browser and type in the Pi-hole IP address in the URL bar at the top. (Note: Clicking on any option that says "search the web" will search the web for your IP address and not take you to your local Pi-hole IP address)
 
 <img width="1078" height="123" alt="Screenshot From 2026-08-10 14-17-11" src="https://github.com/user-attachments/assets/150b56dc-031f-4ab0-b436-6bcc7e469eb1" />
 
-### Step 18.
+### Step 19.
 
 Now you should be on the Pi-hole login page and where it says "Consider upgrading to HTTPS"
 click on "HTTPS". 
@@ -177,7 +177,7 @@ Now you should be back at the Pi-hole login but this time you're connected to it
 <img width="1152" height="967" alt="Screenshot From 2026-08-10 14-21-02" src="https://github.com/user-attachments/assets/dc7b75b9-cf9e-4fc5-b3a2-91a590850e7c" />
 
 ## Logging In
-### Step 19.
+### Step 20.
 Now enter the password Pi-hole generated for you at the end of instillation and click "Login"
 
 <img width="1152" height="967" alt="Screenshot From 2026-08-10 14-21-54" src="https://github.com/user-attachments/assets/436b8c4a-0e3a-4414-b1a0-2817e9420811" />
@@ -187,14 +187,14 @@ You will now see the Pi-hole dashboard.
 <img width="1573" height="1003" alt="Screenshot From 2026-08-10 14-23-32" src="https://github.com/user-attachments/assets/aec2e14a-73e8-4f0f-8ba4-c73f65202010" />
 
 ## Final Steps
-### Step 20.
+### Step 21.
 
 After everything is setup you should log into your router and set a DHCP reservation, if you are not sure how to, Google "Router model + how to set DHCP reservation" or you can ask your favorite AI model
 Here's an example of what mine looked like.
 
 <img width="480" height="968" alt="Screenshot From 2026-08-10 14-15-13" src="https://github.com/user-attachments/assets/06430bfc-7300-47fe-b150-aec32ffd3a4a" />
 
-### Step 21.
+### Step 22.
 
 It's time to make a new password to replace the randomly generated one. 
 Go back to Proxmox and click on the console and copy paste this command and hit enter.
@@ -208,7 +208,7 @@ Now it will ask you to enter your new password and to retype it.
 
 <img width="1157" height="331" alt="Screenshot From 2026-08-10 19-54-39" src="https://github.com/user-attachments/assets/38136888-47f5-4ef0-b1ff-799aa04a0d3b" />
 
-### Step 22.
+### Step 23.
 
 There's one last warning to clean up. Due to how LXC handles resources Pi-hole will fail to host it's own time, but it can pull the time from Proxmox.
 
