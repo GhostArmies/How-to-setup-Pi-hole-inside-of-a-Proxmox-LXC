@@ -205,7 +205,7 @@ And if your dashboard updates showing it has blocked AD traffic, it's working.
 ## Final Steps
 ### Step 21.
 
-After everything is setup you should log into your router and set a DHCP reservation, if you are not sure how to, Google "Router model + how to set DHCP reservation" or you can ask your favorite AI model
+After everything is setup you should log into your router and set a DHCP reservation, if you are not sure how to, Google "Router model + how to set DHCP reservation" or you can ask your favorite AI model.
 Here's an example of what mine looked like.
 
 <img width="480" height="968" alt="Screenshot From 2026-08-10 14-15-13" src="https://github.com/user-attachments/assets/06430bfc-7300-47fe-b150-aec32ffd3a4a" />
