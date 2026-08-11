@@ -1,6 +1,8 @@
 # How to set up Pi-hole inside of a Proxmox 9.2.10 LXC
+## A step-by-step, screenshot-by-screenshot guide to running Pi-hole in an unprivileged LXC container on Proxmox 9.2.10.
 
-Before getting started you will need to have Proxmox installed. If you don't already have it setup, I recommend this guide to get started https://www.youtube.com/watch?v=lFzWDJcRsqo&t
+Before getting started you will need to have Proxmox installed. If you don't already have it setup, I recommend this guide to get started https://www.youtube.com/watch?v=lFzWDJcRsqo&t 
+
 ## Getting Setup
 ### Step 1.
 
