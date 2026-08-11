@@ -186,4 +186,10 @@ You will now see the Pi-hole dashboard.
 
 <img width="1573" height="1003" alt="Screenshot From 2026-08-10 14-23-32" src="https://github.com/user-attachments/assets/aec2e14a-73e8-4f0f-8ba4-c73f65202010" />
 
+## Final Steps
+### Step 20
 
+After everything is setup you should into you router and set DHCP reservation, if you are sure where to go Google "Router model how to set DHCP reservation" or you can ask you favorite AI model
+Here's an example of what mine looked like.
+
+<img width="480" height="968" alt="Screenshot From 2026-08-10 14-15-13" src="https://github.com/user-attachments/assets/06430bfc-7300-47fe-b150-aec32ffd3a4a" />
