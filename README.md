@@ -210,7 +210,7 @@ Now it will ask you to enter your new password and to retype it.
 
 ### Step 23.
 
-Enter this command into the the console to update Pi-hole.
+This is more of a maintenance step for the future, because Pi-hole was just installed it is already up to date. Enter this command into the the console to update Pi-hole. 
 ```
 pihole -up
 ```
