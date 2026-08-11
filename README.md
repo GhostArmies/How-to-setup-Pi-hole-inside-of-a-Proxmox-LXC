@@ -187,9 +187,43 @@ You will now see the Pi-hole dashboard.
 <img width="1573" height="1003" alt="Screenshot From 2026-08-10 14-23-32" src="https://github.com/user-attachments/assets/aec2e14a-73e8-4f0f-8ba4-c73f65202010" />
 
 ## Final Steps
-### Step 20
+### Step 20.
 
 After everything is setup you should into you router and set DHCP reservation, if you are sure where to go Google "Router model how to set DHCP reservation" or you can ask you favorite AI model
 Here's an example of what mine looked like.
 
 <img width="480" height="968" alt="Screenshot From 2026-08-10 14-15-13" src="https://github.com/user-attachments/assets/06430bfc-7300-47fe-b150-aec32ffd3a4a" />
+
+### Step 21.
+
+It's time to make a new password to replace the randomly generated one. 
+Go back to Proxmox and click on the console and copy paste this command and hit enter.
+```
+pihole setpassword
+```
+
+<img width="1157" height="331" alt="Screenshot From 2026-08-10 19-53-39" src="https://github.com/user-attachments/assets/d53bb183-16a5-4566-bce7-552f3f91e6ae" />
+
+Now it will ask you to enter your new password and to retype it.
+
+<img width="1157" height="331" alt="Screenshot From 2026-08-10 19-54-39" src="https://github.com/user-attachments/assets/38136888-47f5-4ef0-b1ff-799aa04a0d3b" />
+
+### Step 22.
+
+There's one last warning to clean up. Due to how LXC handles resources Pi-hole will fail to host it's own time, but it can pull the time from Proxmox.
+
+<img width="1573" height="1003" alt="Screenshot From 2026-08-10 14-23-45" src="https://github.com/user-attachments/assets/a791cf46-06e8-482d-b95a-4090cac9e81e" />
+
+Here's the command to fix that warning.
+```
+sudo pihole-FTL --config ntp.sync.active false
+```
+
+<img width="1401" height="792" alt="Screenshot From 2026-08-10 14-25-38" src="https://github.com/user-attachments/assets/568e986a-c4bb-4d13-bb16-fabc04272a69" />
+
+Now you should be all set and from here you can set your routers to the Pi-holes IP address or set it for individual devices.
+
+From here you can adjust if you need to give Pi-hole more resourses like CPU core or RAM. You can also look into adding more block lists, look into things like Unbound DNS for self hosted DNS resolution, adding more Pi-hole instances for redundancy. Or Syncing them using things like  Nebula Sync or Gravity-Sync.
+
+Thanks for reading.
+
