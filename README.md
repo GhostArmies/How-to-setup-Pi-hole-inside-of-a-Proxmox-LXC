@@ -186,7 +186,7 @@ You will now see the Pi-hole dashboard.
 
 <img width="1573" height="1003" alt="Screenshot From 2026-08-10 14-23-32" src="https://github.com/user-attachments/assets/aec2e14a-73e8-4f0f-8ba4-c73f65202010" />
 
-### Step21.
+### Step 21.
 Time to test that it works. From another machine enter the command below with your Pi-hole IP address and it should come back 0.0.0.0, and the dashboard query counter should tick up. (Note: The 192.168.1.16 IP address is for example purposes and you need to enter your Pi-hole IP address)
 ```
 nslookup doubleclick.net <pihole-ip>
@@ -203,14 +203,14 @@ And if your dashboard updates showing it has blocked AD traffic, it's working.
 
 
 ## Final Steps
-### Step 21.
+### Step 22.
 
 After everything is setup you should log into your router and set a DHCP reservation, if you are not sure how to, Google "Router model + how to set DHCP reservation" or you can ask your favorite AI model.
 Here's an example of what mine looked like.
 
 <img width="480" height="968" alt="Screenshot From 2026-08-10 14-15-13" src="https://github.com/user-attachments/assets/06430bfc-7300-47fe-b150-aec32ffd3a4a" />
 
-### Step 22.
+### Step 23.
 
 It's time to make a new password to replace the randomly generated one. 
 Go back to Proxmox and click on the console and copy paste this command and hit enter.
@@ -224,7 +224,7 @@ Now it will ask you to enter your new password and to retype it.
 
 <img width="1157" height="331" alt="Screenshot From 2026-08-10 19-54-39" src="https://github.com/user-attachments/assets/38136888-47f5-4ef0-b1ff-799aa04a0d3b" />
 
-### Step 23.
+### Step 24.
 
 This is more of a maintenance step for the future, because Pi-hole was just installed it is already up to date. Enter this command into the the console to update Pi-hole. 
 ```
@@ -233,21 +233,21 @@ pihole -up
 
 <img width="1157" height="331" alt="Screenshot From 2026-08-10 20-53-31" src="https://github.com/user-attachments/assets/e3e6e2c6-24a0-4de7-b65d-251bf100dae9" />
 
-### Step 24.
+### Step 25.
 
-There's one last warning to clean up. Due to how LXC handles resources, pihole-FTL tries to sync the clock via NTP, and an unprivileged container isn't allowed to set the system clock. It inherits the host's.
+There's one last warning to clean up. Due to how pihole-FTL tries to sync the clock via NTP, and an unprivileged container isn't allowed to set the system clock. It inherits the host's.
 
 <img width="1573" height="1003" alt="Screenshot From 2026-08-10 14-23-45" src="https://github.com/user-attachments/assets/a791cf46-06e8-482d-b95a-4090cac9e81e" />
 
 Here's the command to fix that warning.
 ```
-sudo pihole-FTL --config ntp.sync.active false
+pihole-FTL --config ntp.sync.active false
 ```
 
 <img width="1401" height="792" alt="Screenshot From 2026-08-10 14-25-38" src="https://github.com/user-attachments/assets/568e986a-c4bb-4d13-bb16-fabc04272a69" />
 
 
-Now you should be all set, and from here you can set your routers DNS provider to the Pi-hole's IP address or set it for individual devices. Here's an example of what the Unifi Cloud Gateway setting looks like. (Note: some ISP-supplied routers won't let you change it at all. So you will need to set DNS per-device. Or setup an alternative DHCP server which is outside of the scope for this guide.)
+Now you should be all set, and from here you can set your routers LAN DNS provider to the Pi-hole's IP address or set it for individual devices. Here's an example of what the Unifi Cloud Gateway setting looks like. (Note: some ISP-supplied routers won't let you change it at all. So you will need to set DNS per-device. Or setup an alternative DHCP server which is outside of the scope for this guide.)
 
 <img width="466" height="326" alt="Screenshot From 2026-08-11 13-30-03" src="https://github.com/user-attachments/assets/14bdf80d-06e4-44f2-bf6a-c622dca1d8ef" />
 
