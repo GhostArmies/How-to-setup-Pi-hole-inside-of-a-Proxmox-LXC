@@ -205,14 +205,26 @@ And if your dashboard updates showing it has blocked ad traffic, it's working.
 
 
 ## Final Steps
+
 ### Step 22.
+
+Time to set up the Pi-hole container to auto start when Proxmox does. Click "your Pi-hole container" --> "Options" --> "Start at boot"
+
+<img width="1893" height="586" alt="Screenshot From 2026-08-11 20-11-17" src="https://github.com/user-attachments/assets/9da31bf0-92fe-4e92-8a0e-14bb08baf710" />
+
+Check the "Start at boot" box and click OK.
+
+<img width="1893" height="642" alt="Screenshot From 2026-08-11 20-11-42" src="https://github.com/user-attachments/assets/36157b27-582b-4826-88fe-26832ea4e0fb" />
+
+
+### Step 23.
 
 After everything is setup you should log into your router and set a DHCP reservation, if you are not sure how to, Google "Router model + how to set DHCP reservation" or you can ask your favorite AI model.
 Here's an example of what mine looked like.
 
 <img width="480" height="968" alt="Screenshot From 2026-08-10 14-15-13" src="https://github.com/user-attachments/assets/06430bfc-7300-47fe-b150-aec32ffd3a4a" />
 
-### Step 23.
+### Step 24.
 
 It's time to make a new password to replace the randomly generated one. 
 Go back to Proxmox and click on the console and copy paste this command and hit enter.
@@ -226,7 +238,7 @@ Now it will ask you to enter your new password and to retype it.
 
 <img width="1157" height="331" alt="Screenshot From 2026-08-10 19-54-39" src="https://github.com/user-attachments/assets/38136888-47f5-4ef0-b1ff-799aa04a0d3b" />
 
-### Step 24.
+### Step 25.
 
 This is more of a maintenance step for the future, because Pi-hole was just installed it is already up to date. Enter this command into the the console to update Pi-hole. 
 ```
@@ -235,7 +247,7 @@ pihole -up
 
 <img width="1157" height="331" alt="Screenshot From 2026-08-10 20-53-31" src="https://github.com/user-attachments/assets/e3e6e2c6-24a0-4de7-b65d-251bf100dae9" />
 
-### Step 25.
+### Step 26.
 
 There's one last warning to clean up. Due to how pihole-FTL tries to sync the clock via NTP, and an unprivileged container isn't allowed to set the system clock. It inherits the host's.
 
@@ -248,7 +260,7 @@ pihole-FTL --config ntp.sync.active false
 
 <img width="1401" height="792" alt="Screenshot From 2026-08-10 14-25-38" src="https://github.com/user-attachments/assets/568e986a-c4bb-4d13-bb16-fabc04272a69" />
 
-### Step 26.
+### Step 27.
 
 Now you should be all set, and from here you can set your router's LAN DNS provider to the Pi-hole's IP address or set it for individual devices. Here's an example of what the Unifi Cloud Gateway setting looks like. (Note: some ISP-supplied routers won't let you change it at all. So you will need to set DNS per-device. Or Pi-hole has an option to operate as DHCP server which is outside of the scope for this guide.)
 
@@ -256,7 +268,7 @@ Now you should be all set, and from here you can set your router's LAN DNS provi
 
 Devices keep their old DNS until their lease renews. Reboot them or wait.
 
-### Step 27.
+### Step 28.
 
 (Quick warning) Don't set the Proxmox host's DNS to the Pi-hole container, leave it on your router or an upstream resolver like Google DNS 8.8.8.8 or Cloudflare DNS 1.1.1.1 otherwise if the host reboots, it can't resolve anything until a container it hasn't started yet comes up.
 
