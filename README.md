@@ -11,7 +11,7 @@ Inside of the Proxmox Web UI select "local (pve)" --> "CT Templates" --> "Templa
 
 ### Step 2.
 
-From the templates find "ubuntu-26.04-standard" click on it and click Download in the bottom right corner and wait for it to download.
+From the templates find "ubuntu-26.04-standard" click on it and click Download in the bottom right corner and wait for it to download. (Note: This guide should also work for Debian.)
 
 <img width="1758" height="911" alt="Screenshot From 2026-08-10 13-54-48" src="https://github.com/user-attachments/assets/7818c6ef-3ac7-4599-9044-8ec8e0eef2c9" />
 
